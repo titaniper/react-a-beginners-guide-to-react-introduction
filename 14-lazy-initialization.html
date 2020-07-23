@@ -5,10 +5,8 @@
   <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
   <script type="text/babel">
     function Greeting() {
-      const [name, setName] = React.useState(
-        () => window.localStorage.getItem('name') || '',
-      )
-
+      const [name, setName] = React.useState(window.localStorage.getItem('name') || '')
+      console.log('hihi222222')
       React.useEffect(() => {
         window.localStorage.setItem('name', name)
       })
